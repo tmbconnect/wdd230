@@ -13,7 +13,6 @@ body {
 }
 
 
-
 header,
 nav,
 main,
@@ -27,14 +26,15 @@ footer {
 header {
     display: grid;
     align-items: center;
-    background-color: #6f1a07ff;
+    background-color: #38182f;
     color: #fff;
+    border: 2px solid #343432;
 }
 
-
 nav {
-    background-color: #2b2118ff;
-    color: #fff;
+
+    border: 2px solid #343432;
+    /* Border around the entire section */
 }
 
 .navigation {
@@ -42,19 +42,15 @@ nav {
     flex-direction: column;
 }
 
-.navigation ul {
+.navigation li {
     list-style: none;
     /* Remove bullet points */
     padding: 0;
 }
 
-.navigation li {
-    flex: 1 1 auto;
-}
-
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #38182f;
 }
 
 main {
@@ -65,31 +61,55 @@ main {
         "courseName"
         "learnAct"
         "information";
-    background-color: #a8763eff;
+
     gap: 20px;
     padding: 20px;
     margin: 0 auto;
 }
 
-
 .courseName {
     grid-area: courseName;
-}
+    text-align: center;
+    color: #38182f;
 
+}
 
 
 .card h3 {
-    color: #333;
-    margin-bottom: 10px;
+    background-color: #343432;
+    color: #fff;
+    text-align: center;
+}
+
+.card p {
+    color: #343432;
+    text-align: center;
+}
+
+#learnAct {
+
+    color: #343432;
+    /* Text color for the header */
+
+}
+
+#learnAct h3 {
+    text-align: center;
+    background-color: #343432;
+    color: #fff;
 }
 
 #learnActList {
-    list-style-type: none;
+    list-style: none;
+    /* Remove default list styling */
     padding: 0;
+    /* Remove default padding for the list */
 }
 
-footer {
 
-    background-color: #6f1a07ff;
+footer {
+    background-color: #343432;
+    ;
     color: #fff;
+    text-align: center;
 }
