@@ -10,7 +10,7 @@ body {
     font-family: 'YourChosenFont', sans-serif;
     background-color: #f7f3e3ff;
     color: #FFF;
- }
+}
 
 
 
@@ -25,36 +25,42 @@ footer {
 }
 
 header {
-display: grid;
-grid-template-columns: 300px 1fr;
-align-items: center;
+    display: grid;
+    align-items: center;
     background-color: #6f1a07ff;
     color: #fff;
 }
 
+
 nav {
-  
     background-color: #2b2118ff;
     color: #fff;
 }
 
-.navigation {display: flex;
+.navigation {
+    display: flex;
     flex-direction: column;
-
 }
+
+.navigation ul {
+    list-style: none;
+    /* Remove bullet points */
+    padding: 0;
+}
+
 .navigation li {
     flex: 1 1 auto;
 }
+
 nav a {
     text-decoration: none;
     color: #fff;
 }
 
 main {
-    
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto 1fr 1fr;
     grid-template-areas:
         "courseName"
         "learnAct"
@@ -63,16 +69,14 @@ main {
     gap: 20px;
     padding: 20px;
     margin: 0 auto;
-   
 }
+
 
 .courseName {
     grid-area: courseName;
 }
 
-.card {
-    grid-area: auto;
-}
+
 
 .card h3 {
     color: #333;
