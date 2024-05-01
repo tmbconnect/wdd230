@@ -13,7 +13,7 @@
         
         <title>Tina Brown - WDD 230 - Web Frontend Development</title>
         
-        <link rel="stylesheet" href="/wdd230/styles/base.css">
+        <link rel="stylesheet" href="styles/base.css">
     
     </head>
 
@@ -50,8 +50,8 @@
                 <h3>Information</h3>
                 <!--Placeholder content info for weather, visits, etc.-->
                 <p>Country: United States </p>
-                <p>Weather: Sunny </p>
-                <p>Visits: 0 </p>
+                <p>Weather: <span id="weather"></span> Sunny </p>
+                <p>Visits: <span id="visitCount">0</span></p>
             </section>
         </main>
         <footer>
@@ -59,7 +59,7 @@
             <!-- add flag and state or country copy right symbol and current year will be dynamically populated with JavaScript-->
             <p id="lstModified"></p> <!--Date site was last modified will be poputlated with JavaScript-->
         </footer>
-
+        <script src="scripts/getdates.js"></script>
     </body>
 
 </html>
